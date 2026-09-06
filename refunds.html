@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Refund policy — LexiPix</title>
+<meta name="description" content="How refunds work for LexiPix.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://lexipix.reallexi.io/refunds.html">
+<link rel="alternate" hreflang="en" href="https://lexipix.reallexi.io/refunds.html">
+<link rel="alternate" hreflang="ar" href="https://lexipix.reallexi.io/ar/refunds.html">
+<link rel="alternate" hreflang="fr" href="https://lexipix.reallexi.io/fr/refunds.html">
+<link rel="alternate" hreflang="fa" href="https://lexipix.reallexi.io/fa/refunds.html">
+<link rel="alternate" hreflang="x-default" href="https://lexipix.reallexi.io/refunds.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Refund policy — LexiPix">
+<meta property="og:image" content="https://lexipix.reallexi.io/img/feature-graphic.png">
+<meta name="twitter:image" content="https://lexipix.reallexi.io/img/feature-graphic.png">
+<meta property="og:description" content="How refunds work for LexiPix.">
+<meta property="og:url" content="https://lexipix.reallexi.io/refunds.html">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  /* The app's palette, not the template's.
+     These are the exact values in app/ui/kit.jsx PALETTES, which were computed
+     against the WCAG pairs scripts/check-a11y.mjs enforces. A site in a
+     different blue was advertising a product it did not look like. */
+  :root {
+    color-scheme: dark light;
+    --bg:#07050f; --card:#1a1338; --fg:#f3effd; --dim:#a99fcc;
+    --accent:#a78bff; --accent2:#5eead4; --line:#7b71a3;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#efebf8; --card:#ffffff; --fg:#191230; --dim:#57506f; --accent:#6b31d4; --accent2:#0f766e; --line:#8a82a6; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .skip { position:absolute; left:-9999px; }
+  .skip:focus { left:8px; top:8px; padding:8px 12px; background:var(--accent); color:var(--bg); z-index:10; border-radius:8px; }
+  header, main, footer { max-width:52rem; margin:0 auto; padding:1.5rem 1.25rem; }
+  header {
+    display:flex; flex-wrap:wrap; gap:1rem; align-items:center; justify-content:space-between;
+    border-bottom:1px solid var(--line);
+  }
+  nav a { margin-inline-end:1rem; }
+  a { color:var(--accent); text-underline-offset:.2em; }
+  a:focus-visible { outline:3px solid var(--accent); outline-offset:2px; border-radius:4px; }
+  h1 { font-size:clamp(2rem,6vw,3rem); line-height:1.1; letter-spacing:-.02em; margin:0 0 .5rem; }
+  h2 { font-size:1.35rem; margin-top:2.5rem; letter-spacing:-.01em; }
+  .brand { font-weight:800; font-size:1.15rem; color:var(--fg); text-decoration:none; letter-spacing:-.01em; }
+  .brand img { width:28px; height:28px; border-radius:8px; vertical-align:-8px; margin-inline-end:.5rem; }
+  .updated { color:var(--dim); font-size:.9rem; }
+  footer { border-top:1px solid var(--line); color:var(--dim); font-size:.9rem; }
+  ul { padding-inline-start:1.25rem; }
+
+  /* The one sentence the product is about. */
+  .lede { font-size:clamp(1.15rem,2.6vw,1.5rem); line-height:1.4; color:var(--fg); margin:.25rem 0 1.25rem; }
+
+  /* A gradient panel, the same ramp the app's primary button uses. */
+  .hero {
+    margin:1.5rem 0 2rem; padding:2rem 1.5rem; border-radius:22px;
+    border:1px solid var(--line);
+    background:
+      radial-gradient(120% 140% at 12% 0%, color-mix(in srgb, var(--accent) 28%, transparent), transparent 60%),
+      radial-gradient(120% 140% at 100% 100%, color-mix(in srgb, var(--accent2) 22%, transparent), transparent 55%),
+      var(--card);
+  }
+  .hero p:last-child { margin-bottom:0; }
+
+  .shots { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin:1.25rem 0; }
+  .shots img { width:100%; height:auto; border-radius:16px; border:1px solid var(--line); display:block; }
+  /* The store links. Big enough to be the obvious next action on a phone,
+     which is where most of this page is read. */
+  .stores { display:flex; flex-wrap:wrap; gap:.6rem; margin:1.1rem 0 .4rem; }
+  .stores .store {
+    display:inline-block; padding:.7rem 1.1rem; border-radius:12px;
+    background:var(--fg); color:var(--bg); font-weight:700; text-decoration:none;
+    border:1px solid var(--fg); min-height:44px; line-height:1.6;
+  }
+  .stores .store:hover, .stores .store:focus { opacity:.88; }
+  @media (max-width:420px) { .stores .store { flex:1 1 100%; text-align:center; } }
+
+  .features { list-style:none; padding:0; display:grid; gap:.6rem; }
+  .features li { padding:.85rem 1rem; border:1px solid var(--line); border-radius:14px; background:var(--card); }
+
+  .credit { color:var(--dim); font-size:.9rem; }
+  .langs { max-width:52rem; margin:0 auto; padding:.75rem 1.25rem; display:flex; flex-wrap:wrap; gap:.75rem; border-bottom:1px solid var(--line); font-size:.95rem; }
+  .langs [aria-current] { font-weight:700; color:var(--fg); }
+  code { background:var(--card); padding:.15em .4em; border-radius:6px; border:1px solid var(--line); }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <a class="brand" href="./"><img src="./img/icon.png" alt="" width="28" height="28">LexiPix</a>
+  <nav aria-label="Site"><a href="./">Home</a><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a><a href="./support.html">Support</a></nav>
+</header>
+<nav class="langs" aria-label="Language">
+  <span aria-current="true" lang="en">English</span><a href="./ar/" lang="ar" hreflang="ar">العربية</a><a href="./fr/" lang="fr" hreflang="fr">Français</a><a href="./fa/" lang="fa" hreflang="fa">فارسی</a>
+</nav>
+<main id="main">
+<h1>Refund policy</h1>
+<p class="updated">Last updated 2026-09-06</p>
+
+<p><strong>All purchases are made through Apple and Google, so refunds are handled by them — not by us.</strong> We never receive your payment details and cannot charge or refund your card directly.</p>
+<h2>How to request one</h2>
+<ul>
+  <li><strong>Apple (App Store):</strong> <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, or Settings → your name → Media &amp; Purchases → Purchase History.</li>
+  <li><strong>Google (Play):</strong> Play Store → Menu → Payments &amp; subscriptions → Budget &amp; order history, or <a href="https://support.google.com/googleplay/answer/2479637">Google's refund page</a>.</li>
+</ul>
+
+<p>Statutory rights — including the EU/UK 14-day right of withdrawal for digital purchases — always apply. If a store declines a refund you believe is owed, write to <a href="mailto:admin@reallexi.io">admin@reallexi.io</a> and we will help.</p>
+<p>Cancelling a membership stops future renewals; it does not retroactively refund the current period unless the store or the law says otherwise.</p>
+</main>
+<footer>
+  <p>© 2026 Reallexi LLC · <a href="mailto:admin@reallexi.io">admin@reallexi.io</a></p>
+  <p><a href="./privacy.html">Privacy</a> · <a href="./terms.html">Terms</a> · <a href="./eula.html">EULA</a> · <a href="./refunds.html">Refunds</a> · <a href="./children.html">Children</a> · <a href="./cookies.html">Storage</a> · <a href="./delete-account.html">Delete data</a> · <a href="./imprint.html">Imprint</a></p>
+</footer>
+</body>
+</html>
